@@ -1,0 +1,40 @@
+html {
+  background-color: #15282B;
+  color: #fff;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.second-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.key {
+  background:rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin: 0.5em;
+  padding: 10px;
+  width: 60px;
+  text-align: center;
+  transition: all 0.5s;
+  text-shadow: 0 0 2px #fff;
+}
+
+kbd {
+  display: block;
+  font-size: 35px;
+  margin: 2px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sound</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="keys">
+      <div class="first-row">
+        <div data-key="82" class="key">
+          <kbd>r</kbd>
+          <span class="sound">C#</span>
+        </div>
+        <div data-key="84" class="key">
+          <kbd>t</kbd>
+          <span class="sound">D#</span>
+        </div>
+        <div class="key">
+          <kbd>y</kbd>
+        </div>
+        <div data-key="85" class="key">
+          <kbd>u</kbd>
+          <span class="sound">F#</span>
+        </div>
+        <div data-key="73" class="key">
+          <kbd>i</kbd>
+          <span class="sound">G#</span>
+        </div>
+        <div data-key="79" class="key">
+          <kbd>o</kbd>
+          <span class="sound">A#</span>
+        </div>
+      </div>
+
+      <div class="second-row">
+        <div data-key="68" class="key">
+          <kbd>d</kbd>
+          <span class="sound">C</span>
+        </div>
+        <div data-key="70" class="key">
+          <kbd>f</kbd>
+          <span class="sound">D</span>
+        </div>
+        <div data-key="71" class="key">
+          <kbd>g</kbd>
+          <span class="sound">E</span>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>h</kbd>
+          <span class="sound">F</span>
+        </div>
+        <div data-key="74" class="key">
+          <kbd>j</kbd>
+          <span class="sound">G</span>
+        </div>
+        <div data-key="75" class="key">
+          <kbd>k</kbd>
+          <span class="sound">A</span>
+        </div>
+        <div data-key="76" class="key">
+          <kbd>l</kbd>
+          <span class="sound">B</span>
+        </div>
+      </div>
+    </div>
+
+    <audio data-key="68" src="wav/c1.wav"></audio>
+    <audio data-key="82" src="wav/c1s.wav"></audio>
+    <audio data-key="70" src="wav/d1.wav"></audio>
+    <audio data-key="84" src="wav/d1s.wav"></audio>
+    <audio data-key="71" src="wav/e1.wav"></audio>
+    <audio data-key="72" src="wav/f1.wav"></audio>
+    <audio data-key="85" src="wav/f1s.wav"></audio>
+    <audio data-key="74" src="wav/g1.wav"></audio>
+    <audio data-key="73" src="wav/g1s.wav"></audio>
+    <audio data-key="75" src="wav/a1.wav"></audio>
+    <audio data-key="79" src="wav/a1s.wav"></audio>
+    <audio data-key="76" src="wav/b1.wav"></audio>
+
+
+    <script>
+      window.addEventListener("keydown", function (e) {
+        console.log(e.keyCode);
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+        if (!audio) return;
+        audio.currentTime = 0;
+        audio.play();
+      });
+    </script>
+  </body>
+</html>
