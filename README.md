@@ -1,5 +1,10 @@
 ## Keyboard
+![alt tag](ScreenShot.png)
 
-Keyboard is a simple app written in JavaScript, inspired by the the Drum Kit app in JavaScript30 tutorial. I have revised to have the sound of piano keys to map unto alphanumeric keys on the keyboard. It's always fun to build something you like, even though there are great products on the market.
+Keyboard is a simple app written in JavaScript, inspired by JavaScript30 challenge. I have mapped the sound of piano keys to the Mac keyboard. Notes typed are displayed on screen and can be reset using the spacebar.
 
-[App-in-progress]
+### Installation
+- clone this repo
+- cd into the folder
+- open **index.html**
+- compose and play on your 'keyboard'
