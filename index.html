@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Sound</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
     <h4>Keyboard</h4>
@@ -218,40 +218,6 @@
     <audio data-key="77" src="wav/File49.wav"></audio>
     <audio data-key="188" src="wav/File50.wav"></audio>
 
-    <script>
-      function playSound(e) {
-        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
-        if (e.keyCode == 32) {
-          e.preventDefault();
-          resetNotes(e, key);
-        }
-        if (!audio) return;
-        key.classList.add("playing");
-        audio.currentTime = 0;
-        audio.play();
-        recordNotes(e);
-      }
-
-      function resetNotes(e, key) {
-        var notes = document.getElementById("notes");
-        notes.innerHTML = "Notes:";
-      }
-
-      function recordNotes(e) {
-        var notes = document.getElementById("notes");
-        notes.innerHTML += e.key;
-      }
-
-      function removeTransition(e) {
-        if(e.propertyName !== "transform") return;
-        e.target.classList.remove("playing");
-      }
-
-      const keys = Array.from(document.querySelectorAll(".key"));
-      keys.forEach(key => key.addEventListener("transitionend", removeTransition));
-      window.addEventListener("keydown", playSound);
-
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

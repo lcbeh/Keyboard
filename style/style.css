@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: sans-serif;
-  padding: 5%;
+  padding: 2% 5%;
 }
 
 h4 {
@@ -15,7 +15,7 @@ h4 {
 
 #notes {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 300;
   letter-spacing: 0.2em;
   color: #fff;
@@ -26,7 +26,7 @@ h4 {
 .keys {
   display: flex;
   flex-direction: column;
-  margin: 12% 0;
+  margin: 10% 0;
 }
 
 .line {
@@ -39,22 +39,22 @@ h4 {
   border: 2px solid #fff;
   border-radius: 5px;
   margin: 0.5em;
-  padding: 5px 10px;
-  width: 40px;
-  height: 65px;
+  padding: 3px 7px;
+  width: 25px;
+  height: 45px;
   text-align: center;
   transition: all 0.5s;
 }
 
 .playing {
-  transform: scale(1.05);
+  transform: scale(1.1);
   border-color: #64BCCC;
-  box-shadow: 0 0 10px #64BCCC;
+  box-shadow: 0 0 10px #6CD4FF;
 }
 
 kbd {
   display: block;
-  font-size: 35px;
+  font-size: 20px;
   margin: 2px;
   text-shadow: 0 0 2px #fff;
 }
@@ -71,8 +71,8 @@ kbd {
   border-radius: 5px;
   margin: 0.5em;
   padding: 5px 10px;
-  width: 280px;
-  height: 65px;
+  width: 200px;
+  height: 40px;
   text-align: center;
   vertical-align: middle;
   transition: all 0.5s;
