@@ -1,10 +1,6 @@
 ## Keyboard
 ![alt tag](style/ScreenShot.png)
 
-Keyboard is a simple app written in JavaScript, inspired by JavaScript30 challenge. I have mapped the sound of piano keys to the Mac keyboard. Notes typed are displayed on screen and can be reset using spacebar.
+Keyboard is a virtual piano app written in JavaScript, inspired by JavaScript30 challenge. Notes are displayed on screen and can be reset using spacebar.
 
-### Installation
-- clone this repo
-- cd into the folder
-- open **index.html**
-- compose and play on your 'keyboard'
+[Play](https://lcbeh.github.io/Keyboard/)
